@@ -1,0 +1,6 @@
+tasks:
+  - before: >
+      mkdir -p build &&
+      cd build
+    init: cmake -DLLVM_ENABLE_PROJECTS=clang -G "Unix Makefiles" ../llvm
+    command: echo "run 'make' to build"
